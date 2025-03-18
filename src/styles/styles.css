@@ -139,4 +139,7 @@ section {
     text-align: center;
     align-items: center;
   }
+  .container section {
+    margin: 10px;
+  }
 }
