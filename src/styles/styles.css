@@ -1,0 +1,142 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* Container */
+.container {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 500px;
+}
+/* Header */
+.header {
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 400px;
+}
+
+.logo-icon {
+  font-size: 40px;
+  font-weight: bold;
+  color: orange;
+}
+
+.subtitle {
+  font-size: 24px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.description {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Contact Form */
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container p {
+  padding: 0;
+  margin: 0;
+}
+
+.error {
+  color: rgb(255, 60, 60);
+}
+
+.succes {
+  color: green;
+}
+.contact-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-form input {
+  width: 250px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: transparent;
+}
+
+.contact-form button {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #e65c00;
+}
+
+/* Services */
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.service-card {
+  background: #112949 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+  opacity: 1;
+  padding: 20px;
+  border-radius: 8px;
+  width: 270px;
+  height: 210px;
+}
+.card-title {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.card-title h3 {
+  font-size: larger;
+  text-overflow: ellipsis;
+  text-align: left;
+  font: normal normal normal 24px/29px Exo 2;
+  letter-spacing: 0px;
+  color: #3cc3f2;
+  opacity: 1;
+}
+.icon {
+  width: 40px;
+  /* height: 40px; */
+  margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 1100px) {
+  .container {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+  }
+}
