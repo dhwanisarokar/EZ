@@ -30,7 +30,7 @@ const ContactForm = () => {
 
   return (
     <div className="form-container">
-      {!message && <form onSubmit={handleSubmit} className="contact-form">
+      {!message && <form className="contact-form">
         <input
           type="email"
           value={email}
@@ -39,7 +39,7 @@ const ContactForm = () => {
           className="input"
         />
 
-        <button type="submit" className="button">
+        <button  onClick={handleSubmit}  type="submit" className="button">
           Contact Me
         </button>
       </form>}
